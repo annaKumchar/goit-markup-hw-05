@@ -65,8 +65,19 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button type="button" class="primary">Замовити послугу</button>
+          <button type="button" class="primary" data-modal-open>Замовити послугу</button>
+          <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <div class="container-cross-button">
+            <button type="button" class="cross-button" data-modal-close>
+              <svg class="svg-cross" width="10" height="16">
+              <use href="./images/sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
+          </div>
+           </div>
         </div>
+          </div>
       </section>
       <!--Особливості-->
       <section class="section">
@@ -131,12 +142,15 @@
           <ul class="work list">
             <li class="item">
               <img src="./images/box1.jpg" alt="box 1" width="370" />
+              <p class="work-txt">Десктопні додатки</p>
             </li>
             <li class="item">
               <img src="./images/box2.jpg" alt="box 2" width="370" />
+              <p class="work-txt">Мобільні додатки</p>
             </li>
             <li class="item">
               <img src="./images/box3.jpg" alt="box 3" width="370" />
+              <p class="work-txt">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -433,5 +447,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
